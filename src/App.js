@@ -12,7 +12,7 @@ function App() {
       <b> Cart </b>
       <br/>
       <p> Products </p>
-      { products.map( (item, index) => ( <div key={index}> <p> {item.name} </p> <b> GHS{item.price}</b> </div> ) ) }
+      { products.map( (item, index) => ( <div key={index}> <p> {item.name} </p> <b> GHS{item.price}</b> <button>Add to Cart </button>  </div> ) ) }
     </div>
   );
 }

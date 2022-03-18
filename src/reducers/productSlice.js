@@ -11,7 +11,7 @@ const products = [
 
 export const productSlice = createSlice({
     name: 'products',
-    initialState: products
+    initialState: products,
 })
 
-export default productSlice.reducer
+export default productSlice.reducer;

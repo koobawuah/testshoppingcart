@@ -1,6 +1,6 @@
 import './App.css';
 import { useDispatch, useSelector } from 'react-redux';
-import {addToCart} from './reducers/cartSlice';
+import {addToCart, removeFromCart} from './reducers/cartSlice';
 
 function App() {
 
@@ -17,7 +17,7 @@ function App() {
           (cartItem, index) => ( 
             <div key={index}> 
               <p> {cartItem.name} - <b> GHS{cartItem.price}</b> </p> 
-             <button onClick={ () => console.log(index)}>
+             <button onClick={ () => dispatch(removeFromCart(index)) } >
                 Remove from Cart 
               </button>  
             </div> 

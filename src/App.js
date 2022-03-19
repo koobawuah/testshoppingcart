@@ -12,7 +12,7 @@ function App() {
     <div className="App">
       <p> Testshoppingcart </p>
       <br/>
-      <b> Cart </b>
+      <b> Cart {cart.length} </b>
       { cart.map( 
           (cartItem, index) => ( 
             <div key={index}> 
